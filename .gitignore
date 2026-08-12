@@ -1,0 +1,29 @@
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.local.yml
+*.local.yaml
+*.local.json
+secrets/
+
+# Runtime data and logs
+data/
+logs/
+*.log
+*.pid
+*.state
+__pycache__/
+*.py[cod]
+
+# Beat runtime directories (when installed or tested from this checkout)
+filebeat/data/
+filebeat/logs/
+winlogbeat/data/
+winlogbeat/logs/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

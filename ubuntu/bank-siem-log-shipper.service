@@ -1,0 +1,15 @@
+[Unit]
+Description=Bank SIEM Linux log shipper
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/bank-siem/log_shipper.py
+Restart=always
+RestartSec=5
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
